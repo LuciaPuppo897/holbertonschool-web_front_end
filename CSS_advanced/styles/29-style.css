@@ -51,6 +51,12 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     --button-hover-color: var(--color-white);
     --button-hover-text-decoration: none;
     --button-hover-background: var(--color-primary);
+    --header-padding: 4rem 0 0;
+    --header-logo-position: relative;
+    --header-logo-link-display: inline-block;
+    --header-logo-link-position: absolute;
+    --header-logo-link-top: -1rem;
+    --header-logo-link-left: 0;
   }
   
 [data-section-theme="dark"] {
@@ -60,11 +66,24 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     --button-color: var(--color-white);
   }
   
-  .card-category {
+.card-category {
     color: var(--color-primary);
   }
 
+header {
+    padding: var(--header-padding);
+  }
   
+.header-logo {
+    position: var(--header-logo-position);
+  }
+  
+.header-logo a {
+    display: var(--header-logo-link-display);
+    position: var(--header-logo-link-position);
+    top: var(--header-logo-link-top);
+    left: var(--header-logo-link-left);
+  }
 .section-tagline {
     color: var(--color-primary);
     font-family: var(--font-family-title);
@@ -73,7 +92,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     margin: var(--section-tagline-margin);
   }
 
-  .section-header {
+.section-header {
     text-align: var(--section-header-align);
   }
 
@@ -193,6 +212,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
     text-align: center;
+    list-style: none;
   }
   
 .nav .nav-item {
@@ -210,7 +230,22 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 .nav .nav-link:hover {
-    color: var(--nav-item-link-hover);
+    color: var(--nav-item-link-hover)
+  }
+
+nav .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    width: 0;
+    height: 20%;
+  }
+
+nav .nav-item:hover .nav-link::before {
+    background-color: var(--color-primary);
+    width: 100%;
   }
 
 ul.row {
@@ -236,7 +271,18 @@ ul.row {
     display: table;
     clear: both;
   }
-
+.section-hero {
+    background-size: 90rem auto;
+  }
+  
+.section-hero .section-title {
+    margin-bottom: 5rem;
+  }
+  
+.section-hero .section-inner {
+    padding: 10rem 40rem 2rem 0;
+  }
+  
 .card-testimonial {
     text-align: center;
   }
