@@ -40,7 +40,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     --nav-item-letter-spacing: 4%;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 calc(3 * var(--root-font-size)) 0;
-    --nav-item-link-hover: var(--color-primary);
+    --nav-item-link-hover: var(--color-white);
     --section-tagline-margin: 0;
     --button-display: inline-block;
     --button-padding: 1.5rem 3rem;
@@ -234,7 +234,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 nav .nav-link::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
