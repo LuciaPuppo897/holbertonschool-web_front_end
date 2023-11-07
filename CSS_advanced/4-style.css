@@ -17,18 +17,18 @@
     scroll-behavior: smooth;
   }
 
-body{
+body {
     color:var(--text-color);
     font-family: var(--font-family-base);
   }
 
-a{
+a {
     color:var(--text-color);
   }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
   }
-.visuall-hidden{
+.visuall-hidden {
     display: none;
   }

@@ -19,6 +19,7 @@
     --line-height-big: 1.8;
     --section-header-align: center;
     --section-tagline-transform: uppercase;
+    
   }
   
   .card-category {
@@ -41,7 +42,7 @@
     font-size: 62.5%;
 }
 
-body{
+body {
     color:var(--text-color);
     font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
@@ -49,7 +50,7 @@ body{
     line-height: var(--line-height-base);
     }
 
-a{
+a {
     color:var(--text-color);
     text-decoration: none;
     }
@@ -58,6 +59,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
     }
-.visuall-hidden{
+.visuall-hidden {
     display: none;
     }
